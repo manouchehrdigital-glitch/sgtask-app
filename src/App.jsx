@@ -1,14 +1,21 @@
-// --- Firebase Configuration ---
-// این قسمت را با مقادیر خودتان از کنسول فایربیس پر کنید
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyAWiiI9Pry30RzK_c4gggd29vWmJx49L5Y",
+  authDomain: "sgtask-b21fe.firebaseapp.com",
+  projectId: "sgtask-b21fe",
+  storageBucket: "sgtask-b21fe.firebasestorage.app",
+  messagingSenderId: "913711953990",
+  appId: "1:913711953990:web:59d56a8ec3f69e959e3247",
+  measurementId: "G-560FFJGHFD"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-// بقیه کد مثل قبل...
-const appId = "sgtask-production"; // یک اسم ثابت بگذارید
+const analytics = getAnalytics(app);
